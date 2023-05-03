@@ -40,5 +40,8 @@ main {
   font-weight: 500;
   color: rgb(7, 80, 56);
 }
+#form button:hover {
+  background-color: rgb(85, 218, 174);
+}
 
 /*# sourceMappingURL=style.css.map */
