@@ -9,6 +9,15 @@
         h2{
             font-size: 1.2rem;
         }
+
+        #acountValue{
+            &.positive{
+                color: rgb(10, 229, 10);
+            }
+            &.negative{
+                color: rgb(210, 13, 13);
+            }
+        }
         
     }
     #finances-section{
@@ -51,11 +60,31 @@
 
         .containerBtn{
             display: flex;
-
+            gap: 10%;
 
             button{
-                width: 60px;
-                height: 30px;
+                width: 70px;
+                height: 40px;
+                border-style: none;
+                border-radius: 5px;
+                font-weight: 500;
+
+                &.edit-btn{
+                    background-color: rgb(48, 165, 220);
+
+                    &:hover{
+                        background-color: rgb(12, 140, 200);
+                        cursor: pointer;
+                    }
+                }
+                &.delete-btn{
+                    background-color: rgb(208, 33, 45);
+
+                    &:hover{
+                        background-color: rgb(194, 10, 23);
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

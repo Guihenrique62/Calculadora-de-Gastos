@@ -44,13 +44,14 @@ main {
   margin-top: 10px;
   background-color: aquamarine;
   border-style: none;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
   font-weight: 500;
   color: rgb(7, 80, 56);
 }
 #form button:hover {
   background-color: rgb(85, 218, 174);
+  cursor: pointer;
 }
 
 .container {
@@ -65,6 +66,12 @@ main {
 }
 .container .acountValueContainer h2 {
   font-size: 1.2rem;
+}
+.container .acountValueContainer #acountValue.positive {
+  color: rgb(10, 229, 10);
+}
+.container .acountValueContainer #acountValue.negative {
+  color: rgb(210, 13, 13);
 }
 .container #finances-section {
   display: flex;
@@ -102,10 +109,28 @@ main {
 }
 .container .finance-container .containerBtn {
   display: flex;
+  gap: 10%;
 }
 .container .finance-container .containerBtn button {
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.container .finance-container .containerBtn button.edit-btn {
+  background-color: rgb(48, 165, 220);
+}
+.container .finance-container .containerBtn button.edit-btn:hover {
+  background-color: rgb(12, 140, 200);
+  cursor: pointer;
+}
+.container .finance-container .containerBtn button.delete-btn {
+  background-color: rgb(208, 33, 45);
+}
+.container .finance-container .containerBtn button.delete-btn:hover {
+  background-color: rgb(194, 10, 23);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
