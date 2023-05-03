@@ -26,8 +26,18 @@
          </div>
          <section id="finances-section">
             <h2>Historico de Transações</h2>
+            <div class="popup">
+               <form class="edit-form">
+                  <label for="namedit">Name:</label>
+                  <input type="text" id="namedit" name="namedit" required>
+                  <label for="valueedit">Value</label>
+                  <input type="text" name="value" id="value" pattern="-?[0-9]+([\.,][0-9]+)?" required>
+                  <label for="datedit">Data:</label>
+                  <input type="date" id="datedit" name="datedit" required>
+                  <button>Salvar</button>
+               </form>
+            </div>
          </section>
-
       </div>
    </main>
 </body>

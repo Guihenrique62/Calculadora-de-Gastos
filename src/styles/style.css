@@ -17,7 +17,7 @@ main {
   display: flex;
   padding: 20px;
   color: white;
-  height: 100vh;
+  height: 100%;
   gap: 10px;
 }
 
@@ -54,10 +54,6 @@ main {
   cursor: pointer;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
 .container .acountValueContainer {
   background-color: rgb(56, 56, 56);
   border-radius: 5px;
@@ -74,8 +70,8 @@ main {
   color: rgb(210, 13, 13);
 }
 .container #finances-section {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  min-height: 60vh;
   padding: 20px 0px;
   border-radius: 5px;
 }
@@ -84,6 +80,47 @@ main {
   padding: 15px;
   font-size: 1.2rem;
   border-radius: 5px;
+}
+.container #finances-section .popup {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.211);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container #finances-section .popup .edit-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60%;
+  background-color: #676464;
+  border-radius: 10px;
+  padding: 15px;
+}
+.container #finances-section .popup .edit-form input {
+  background-color: rgb(56, 56, 56);
+  border-style: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  color: white;
+}
+.container #finances-section .popup .edit-form button {
+  width: 50%;
+  height: 60%;
+  background-color: aquamarine;
+  border-style: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: rgb(7, 80, 56);
+  align-self: center;
+  margin-top: 20px;
+}
+.container #finances-section .popup .edit-form button:hover {
+  background-color: rgb(85, 218, 174);
+  cursor: pointer;
 }
 .container .finance-container {
   display: flex;

@@ -1,3 +1,5 @@
+import putFinances from "./putFinances"
+
 export default async function renderFinances(financesData){
    const valueData = parseFloat(financesData.value)
 
@@ -35,6 +37,8 @@ export default async function renderFinances(financesData){
    const editBtn = document.createElement('button')
    editBtn.textContent = 'Editar'
    editBtn.classList.add('edit-btn')
+   editBtn.id = `edit-${financesData.id}`
+   editBtn.addEventListener('click', putFinances)
 
    const deleteBtn = document.createElement('button')
    deleteBtn.textContent = 'Excluir'
