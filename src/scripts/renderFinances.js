@@ -1,4 +1,6 @@
 export default async function renderFinances(financesData){
+   const valueData = parseFloat(financesData.value)
+
    const finance = document.createElement('div')
    finance.id = `finance-${financesData.id}`
    finance.classList.add('finance-container')
@@ -14,6 +16,12 @@ export default async function renderFinances(financesData){
    const value = document.createElement('p')
    value.classList.add(`value-content`)
    value.textContent = `R$ ${financesData.value}`
+
+   if(valueData >= 0){
+      value.classList.add('positive')
+   }else{
+      value.classList.add('negative')
+   }
 
    const date = document.createElement('p')
    date.classList.add('date-content')
