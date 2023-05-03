@@ -31,9 +31,9 @@
         background-color: rgb(56, 56, 56);
 
         .finance-content{
-            display: flex;
+            display: grid;
             width: 80%;
-            justify-content: space-between;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .containerBtn{

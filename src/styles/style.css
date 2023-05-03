@@ -75,9 +75,9 @@ main {
   background-color: rgb(56, 56, 56);
 }
 .container .finance-container .finance-content {
-  display: flex;
+  display: grid;
   width: 80%;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .container .finance-container .containerBtn {
   display: flex;
