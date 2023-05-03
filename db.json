@@ -1,10 +1,40 @@
 {
   "finances": [
     {
-      "id": 1,
-      "name": "Estágio",
-      "value": 1300,
-      "date": "2023-05-10"
+      "name": "er",
+      "value": "1330",
+      "date": "2023-05-05",
+      "id": 1
+    },
+    {
+      "name": "er",
+      "value": "1330",
+      "date": "2023-05-05",
+      "id": 2
+    },
+    {
+      "name": "Estagio",
+      "value": "1330",
+      "date": "2023-05-04",
+      "id": 3
+    },
+    {
+      "name": "Guilhermessss",
+      "value": "22",
+      "date": "2023-05-18",
+      "id": 4
+    },
+    {
+      "name": "ty",
+      "value": "88",
+      "date": "2023-05-06",
+      "id": 5
+    },
+    {
+      "name": "ty",
+      "value": "88",
+      "date": "2023-05-06",
+      "id": 6
     }
   ]
 }

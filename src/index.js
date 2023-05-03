@@ -1,8 +1,14 @@
 import fetchFinances from './scripts/fetchFinances';
 import postFinances from './scripts/postFinances';
-import putFinances from './scripts/putFinances';
 import './styles/style.css';
 
-document.addEventListener('DOMContentLoaded', fetchFinances())
+//gera as trasações
+document.addEventListener('DOMContentLoaded', fetchFinances)
+
+//post das transações no BD
 document.getElementById('form').addEventListener('submit', postFinances)
 
+//retira form de edição da tela
+document.querySelector('.bx-x').addEventListener('click', ()=>{
+   document.querySelector('.popup').style.display = 'none'
+})
