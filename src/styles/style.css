@@ -15,7 +15,7 @@ main {
 #form {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 25vw;
   gap: 5px;
 }
 #form h2 {
@@ -42,6 +42,49 @@ main {
 }
 #form button:hover {
   background-color: rgb(85, 218, 174);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .acountValueContainer {
+  background-color: rgb(56, 56, 56);
+  border-radius: 5px;
+  width: 75vw;
+  padding: 10px;
+}
+.container .acountValueContainer h2 {
+  font-size: 1rem;
+}
+.container #finances-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+.container #finances-section h2 {
+  background-color: rgb(56, 56, 56);
+  padding: 10px;
+  font-size: 1rem;
+}
+.container .finance-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(56, 56, 56);
+}
+.container .finance-container .finance-content {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.container .finance-container .containerBtn {
+  display: flex;
+}
+.container .finance-container .containerBtn button {
+  width: 60px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

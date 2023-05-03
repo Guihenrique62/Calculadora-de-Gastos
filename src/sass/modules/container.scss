@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    .acountValueContainer{
+        background-color: rgb(56, 56, 56);
+        border-radius: 5px;
+        width: 75vw;
+        padding: 10px;
+        h2{
+            font-size: 1rem;
+        }
+        
+    }
+    #finances-section{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        border-radius: 5px;
+        h2{
+            background-color: rgb(56, 56, 56);
+            
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+
+    .finance-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: rgb(56, 56, 56);
+
+        .finance-content{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        .containerBtn{
+            display: flex;
+
+
+            button{
+                width: 60px;
+                height: 30px;
+            }
+        }
+    }
+}
+
