@@ -48,6 +48,15 @@ export default async function handlerEditBtn(ev){
          //reseta o form
          form.reset()
 
+         //exclui as transações atuais da tela
+
+         const financeContainers = section.querySelectorAll('.finance-container');
+
+         for (let i = 0; i < financeContainers.length; i++) {
+         section.removeChild(financeContainers[i]);
+         }
+
+
          //recarrega as transações na tela
          fetchFinances()
 
