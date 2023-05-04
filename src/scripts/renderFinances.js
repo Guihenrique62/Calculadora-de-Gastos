@@ -1,3 +1,4 @@
+import deleteFinances from "./deleteFinances"
 import handlerEditBtn from "./handlerEditBtn"
 import totalValue from "./totalValue"
 
@@ -32,6 +33,7 @@ export default async function renderFinances(financesData){
 
    content.append(name,date,value)
 
+   //cointainer de botôes
    const containerBtn = document.createElement('div')
    containerBtn.classList.add('containerBtn')
 
@@ -44,6 +46,8 @@ export default async function renderFinances(financesData){
    const deleteBtn = document.createElement('button')
    deleteBtn.textContent = 'Excluir'
    deleteBtn.classList.add('delete-btn')
+   deleteBtn.id = financesData.id
+   deleteBtn.addEventListener('click', deleteFinances)
 
    containerBtn.append(editBtn,deleteBtn)
 

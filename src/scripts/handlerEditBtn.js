@@ -1,5 +1,6 @@
 import fetchFinances from "./fetchFinances";
 import renderFinances from "./renderFinances";
+import totalValue from "./totalValue";
 
 export default async function handlerEditBtn(ev){
     document.querySelector('.popup').style.display = 'flex';
@@ -52,6 +53,8 @@ export default async function handlerEditBtn(ev){
 
          //retira o form da tela
          document.querySelector('.popup').style.display = 'none';
+
+         totalValue()
     })
 
 }

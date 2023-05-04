@@ -1,28 +1,16 @@
 {
   "finances": [
     {
-      "name": "Estagio",
-      "value": "1330",
-      "date": "2023-05-05",
+      "name": "pizza",
+      "value": "76.2",
+      "date": "2023-05-09",
       "id": 1
     },
     {
-      "name": "Freela",
-      "value": "200",
-      "date": "2023-05-05",
-      "id": 2
-    },
-    {
-      "name": "Tênis da Shein",
-      "value": "-179",
-      "date": "2023-05-03",
-      "id": 3
-    },
-    {
       "name": "pizza",
-      "value": "76.2",
-      "date": "2023-05-27",
-      "id": 4
+      "value": "668",
+      "date": "2023-06-02",
+      "id": 3
     }
   ]
 }
