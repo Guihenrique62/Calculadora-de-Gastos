@@ -1,4 +1,5 @@
 import renderFinances from "./renderFinances"
+import totalValue from "./totalValue"
 
 export default async function postFinances(ev){
    const form = document.getElementById('form')
@@ -21,4 +22,5 @@ export default async function postFinances(ev){
    const savedFinance = await response.json()
    form.reset()
    renderFinances(savedFinance)
+   totalValue()
 }

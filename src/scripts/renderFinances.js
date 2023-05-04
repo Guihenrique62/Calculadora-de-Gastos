@@ -1,4 +1,5 @@
 import handlerEditBtn from "./handlerEditBtn"
+import totalValue from "./totalValue"
 
 export default async function renderFinances(financesData){
    const valueData = parseFloat(financesData.value)

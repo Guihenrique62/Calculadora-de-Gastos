@@ -12,3 +12,4 @@ document.getElementById('form').addEventListener('submit', postFinances)
 document.querySelector('.bx-x').addEventListener('click', ()=>{
    document.querySelector('.popup').style.display = 'none'
 })
+

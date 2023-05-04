@@ -7,10 +7,25 @@ export default async function handlerEditBtn(ev){
     const form = document.querySelector('.edit-form');
     const section = document.querySelector('#finances-section');
 
+
+    //GET do bd para carregar no formulario
+    const response = await fetch(`http://localhost:3000/finances/${btnId}`, {
+            method: 'GET',
+            headers: {
+               'Content-Type': 'application/json'
+            }
+         })
+    const savedFinance = await response.json()
     
+    //carrega as informações do get no form
+    document.getElementById('namedit').value = savedFinance.name
+    document.getElementById('valuedit').value = savedFinance.value
+    document.getElementById('datedit').value = savedFinance.date
+
+
+    //PUT no bd com os dados editados
     form.addEventListener('submit', async (ev)=>{
         ev.preventDefault();
-
         document.querySelectorAll('.finance-container').forEach((element)=>{
             section.removeChild(element)
          })
@@ -29,8 +44,13 @@ export default async function handlerEditBtn(ev){
             body: JSON.stringify(financeData)
          })
          
+         //reseta o form
          form.reset()
+
+         //recarrega as transações na tela
          fetchFinances()
+
+         //retira o form da tela
          document.querySelector('.popup').style.display = 'none';
     })
 
