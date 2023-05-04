@@ -23,6 +23,12 @@ export default async function handlerEditBtn(ev){
     document.getElementById('valuedit').value = savedFinance.value
     document.getElementById('datedit').value = savedFinance.date
 
+    const financeContainers = section.querySelectorAll('.finance-container');
+
+         for (let i = 0; i < financeContainers.length; i++) {
+         section.removeChild(financeContainers[i]);
+         }
+
 
     //PUT no bd com os dados editados
     form.addEventListener('submit', async (ev)=>{
@@ -48,17 +54,9 @@ export default async function handlerEditBtn(ev){
          //reseta o form
          form.reset()
 
-         //exclui as transações atuais da tela
-
-         const financeContainers = section.querySelectorAll('.finance-container');
-
-         for (let i = 0; i < financeContainers.length; i++) {
-         section.removeChild(financeContainers[i]);
-         }
-
-
          //recarrega as transações na tela
-         fetchFinances()
+         const finances = await fetch('http://localhost:3000/finances').then(res => res.json())
+         finances.forEach(renderFinances);
 
          //retira o form da tela
          document.querySelector('.popup').style.display = 'none';
