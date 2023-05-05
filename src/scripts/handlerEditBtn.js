@@ -2,6 +2,7 @@ import fetchFinances from "./fetchFinances";
 import renderFinances from "./renderFinances";
 import totalValue from "./totalValue";
 
+
 export default async function handlerEditBtn(ev){
     document.querySelector('.popup').style.display = 'flex';
     const btnId = ev.target.id;
@@ -22,12 +23,6 @@ export default async function handlerEditBtn(ev){
     document.getElementById('namedit').value = savedFinance.name
     document.getElementById('valuedit').value = savedFinance.value
     document.getElementById('datedit').value = savedFinance.date
-
-    const financeContainers = section.querySelectorAll('.finance-container');
-
-         for (let i = 0; i < financeContainers.length; i++) {
-         section.removeChild(financeContainers[i]);
-         }
 
 
     //PUT no bd com os dados editados
@@ -60,6 +55,8 @@ export default async function handlerEditBtn(ev){
 
          //retira o form da tela
          document.querySelector('.popup').style.display = 'none';
+
+         location.reload()
 
          totalValue()
     })
