@@ -1,34 +1,46 @@
 {
   "finances": [
     {
-      "name": "exames ",
-      "value": "-45",
-      "date": "2023-05-21",
+      "name": "atual",
+      "value": "530",
+      "date": "2023-06-15",
+      "id": 1
+    },
+    {
+      "name": "consulta",
+      "value": "-35",
+      "date": "2023-06-08",
+      "id": 2
+    },
+    {
+      "name": "academia",
+      "value": "-160",
+      "date": "2023-06-08",
+      "id": 3
+    },
+    {
+      "name": "claro",
+      "value": "-40",
+      "date": "2023-06-07",
+      "id": 4
+    },
+    {
+      "name": "protetor + benpatol",
+      "value": "-90",
+      "date": "2023-06-11",
+      "id": 5
+    },
+    {
+      "name": "roacutan",
+      "value": "-120",
+      "date": "2023-06-09",
       "id": 6
     },
     {
       "name": "roacutan",
       "value": "-120",
-      "date": "2023-05-22",
+      "date": "2023-06-06",
       "id": 7
-    },
-    {
-      "name": "protetor",
-      "value": "-40",
-      "date": "2023-05-21",
-      "id": 8
-    },
-    {
-      "name": "fatura",
-      "value": "-250",
-      "date": "2023-05-21",
-      "id": 9
-    },
-    {
-      "name": "investimento",
-      "value": "-200",
-      "date": "2023-05-21",
-      "id": 10
     }
   ]
 }
